@@ -184,7 +184,7 @@ function deleteClickHandler(event){
   var d= event.target.id.replace("delete","edit")
   document.getElementById(c).remove()
   document.getElementById(d).remove()
-  //editmap.
+  //edits.
 }
 
 function imgHeight(image){
