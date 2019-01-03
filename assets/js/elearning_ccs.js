@@ -44,10 +44,10 @@ function dimensionsGet(event){
   console.log("dimensionsGet");
   var canvasX2 = event["layerX"]
   var canvasY2 = event["layerY"]
-  var startX = elearning.startX < canvasX2 ? elearning.startX : canvasX2
-  var startY = elearning.startY < canvasY2 ? elearning.startY : canvasY2
-  var dimX = Math.abs(elearning.startX - canvasX2)
-  var dimY = Math.abs(elearning.startY - canvasY2)
+  var startX = canvasX < canvasX2 ? canvasX : canvasX2
+  var startY = canvasY < canvasY2 ? canvasY : canvasY2
+  var dimX = Math.abs(canvasX - canvasX2)
+  var dimY = Math.abs(canvasY - canvasY2)
   var ei=new edititem()
   ei.dimX=dimX
   ei.dimY=dimY
@@ -240,8 +240,8 @@ function listenerOnMouseDownCanvas(event){
   console.log("listenerOnMouseDownCanvas",event.target);
   //console.log(event,canvasid)
   let canvas=document.getElementById(event.target.id)
-  elearning.startX = event["layerX"]
-  elearning.startY = event["layerY"]
+  canvasX = event["layerX"]
+  canvasY = event["layerY"]
   canvas.addEventListener("mousemove", listenerOnMouseMoveCanvas)
   canvas.addEventListener("mouseup", listenerOnMouseUpCanvas)
   //canvas.addEventListener("mouseout", listenerOnMouseOutCanvas);
