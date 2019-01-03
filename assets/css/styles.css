@@ -1,0 +1,19 @@
+.ctrl-buttons{
+  border:1px solid grey;
+  width:400px;
+}
+
+
+.img-container{
+  border:1px dashed grey;
+  display:inline-block;
+  overflow:scroll;
+  position:relative;
+  width:1200px;
+  height:800px
+}
+
+.img-edit{
+  display:inline-block;
+  overflow:scroll;
+}

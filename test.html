@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  </head>
+  <body>
+  	<h1>
+    elearning_ccs test
+    </h1>
+    <div id="ctrl-buttons" class="ctrl-buttons">
+      <button id="ctrl-button-new" onclick="listenerOnClickButtonNew()">
+        New
+      </button>
+      <input id="input-file-new" name="input-file-new" style="display:none;" type="file" accept=".pdf"/> 
+      <button id="ctrl-button-load" onclick="listenerOnClickButtonLoad()">
+        Load
+      </button>
+      <button id="ctrl-button-save" onclick="listenerOnClickButtonSave()">
+        Save
+      </button>
+      <button>
+        First
+      </button>
+      <button>
+        Previous
+      </button>
+      <button>
+        Next
+      </button>
+      <button>
+        Last
+      </button>
+    </div>
+    <div id="img-container" class="img-container">
+    	<!-- <img id="img-img" src="https://www.gravatar.com/avatar/15664dfb62d89fd5eddb950d9a2b8363?s=328&d=identicon&r=PG">
+      <canvas id="img-canvas" class="img-canvas">
+      </canvas> -->
+    </div>
+    <div id="img-edit" class="img-edit">
+    </div>
+    
+    <!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
+    <script src="assets/js/pdf/pdf.js"></script>
+    <script src="assets/js/elearning_ccs.js"></script>
+    <script>
+      window.onload=init;
+    </script>
+  </body>
+</html>
